@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Westagram</title>
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/common.css">
+    <link rel="stylesheet" href="style/main_right.css">
+    <script src="https://kit.fontawesome.com/9b1960ff86.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <span class="logo-wrap">
+            <span class="logo--icon">
+                <i class="fab fa-instagram"></i>
+            </span>
+            <span class="logo--text">Instagram</span>
+        </span>
+        <span class="search">
+            <input type="text" name="search" id="search" placeholder="              🔎검색">
+            <div class="search__result--wrap hide">
+                <div class="box"></div>
+                <ul class="search__result--container">
+                </ul>
+            </div>
+        </span>
+        <span class="nav__buttons">
+            <button>
+                <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png" alt="explore">
+            </button>
+            <button>
+                <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" alt="like">
+            </button>
+            <button>
+                <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png" id="my__img" alt="my">
+            </button>
+            <div class="my hide">
+                <div class="box"></div>
+                <li class="my__item">
+                    <i class="far fa-user-circle"></i>
+                    <p class="my__item--text">프로필</p>
+                </li>
+                <li class="my__item">
+                    <i class="far fa-bookmark"></i>
+                    <p class="my__item--text">저장됨</p>
+                </li>
+                <li class="my__item">
+                    <i class="fas fa-cog"></i>
+                    <p class="my__item--text">설정</p>
+                </li>
+                <div class="my__logout">로그아웃</div>
+            </div>
+        </span>
+    </nav>
+    <div class="top-story__wrap">
+    </div>
+    <main>
+        <div class="feeds-wrap">
+            <div class="feeds"></div>
+            <div class="feed__end"></div>
+        </div>
+        <aside class="main-right">
+            <div class="account">
+                <img src="images/profile-img2.jpg" alt="" class="account__img">
+                <div class="account__text">
+                    <p class="account__id">Gayun</p>
+                    <div class="account__name">
+                        <p class="account__name--eng">Gayun |</p>
+                        <p class="account__name--kor">이가윤</p>
+                    </div>
+                </div>
+            </div>
+            <div class="story">
+                <div class="story__header">
+                    <h4 class="story__header--title">스토리</h4>
+                    <button class="story__header--button">모두 보기</button>
+                </div>
+                <ul class="story__list collapse">
+                </ul>
+            </div>
+            <div class="recommend">
+                <div class="recommend__header">
+                    <h4 class="recommend__header--title">회원님을 위한 추천</h4>
+                    <button class="recommend__header--button">모두 보기</button>
+                </div>
+                <li class="recommend__list">
+                    <ul class="recommend__item">
+                        <span>
+                            <img src="images/profile-img2.jpg" alt="" class="recommend__item--img">
+                            <span class="recommend__item--text">
+                                <p class="recommend__item--id">bysle_990</p>
+                                <p class="recommend__item--people">this_this외 2명이 팔로우</p>
+                            </span>
+                        </span>
+                        <button class="recommend__item--button">팔로우</button>
+                    </ul>
+                </li>
+            </div>
+            <footer class="footer">Westagram 정보, 지원, 홍보 센터, API, 채용정보, 개인정보처리방침, 약관, 디렉터리, 프로필, 해시태그, 언어
+                <br>
+                @2019gr Westagram
+            </footer>
+        </aside>
+    </main>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
